@@ -1,0 +1,81 @@
+.chat-button-container {
+  position: relative;
+  display: inline-block;
+}
+
+.chat-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.chat-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.chat-button:active {
+  transform: scale(0.95);
+}
+
+.chat-button--open {
+  background-color: #dc3545;
+}
+
+.chat-button svg {
+  transition: transform 0.2s ease;
+}
+
+.chat-button:hover svg {
+  transform: scale(1.1);
+}
+
+.connection-indicator {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.connection-indicator--connected {
+  background-color: #28a745;
+}
+
+.connection-indicator--connecting {
+  background-color: #ffc107;
+  animation: pulse 1.5s infinite;
+}
+
+.connection-indicator--disconnected {
+  background-color: #6c757d;
+}
+
+.connection-indicator--error {
+  background-color: #dc3545;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

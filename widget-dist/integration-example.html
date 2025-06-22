@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website with Chat Widget</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        background: #333;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+      .feature {
+        background: #f8f9fa;
+        padding: 2rem;
+        border-radius: 8px;
+        text-align: center;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Your Website</h1>
+    </header>
+
+    <div class="hero">
+      <h2>Welcome to Our Service</h2>
+      <p>
+        Experience the best customer support with our integrated chat widget
+      </p>
+    </div>
+
+    <main>
+      <section class="features">
+        <div class="feature">
+          <h3>24/7 Support</h3>
+          <p>
+            Our chat widget provides round-the-clock customer support to help
+            you whenever you need it.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Easy Integration</h3>
+          <p>
+            Simply add our script to your website and configure it with your
+            preferences.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Customizable</h3>
+          <p>
+            Customize colors, messages, and endpoints to match your brand and
+            requirements.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>How to Integrate</h2>
+        <p>Add the following code to your HTML page:</p>
+        <pre
+          style="
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+          "
+        ><code>&lt;!-- Configure the chat widget --&gt;
+&lt;script&gt;
+    window.chatWidgetConfig = {
+        title: 'Customer Support',
+        color: '#007bff',
+        messagesEndpoint: '/api/messages',
+        startingMessage: 'Hello! How can I help you today?',
+        botId: '106c3cac-0e27-4cc4-851c-921be1b7eeb9'
+    };
+&lt;/script&gt;
+
+&lt;!-- Load the chat widget --&gt;
+&lt;link rel="stylesheet" href="path/to/chat-widget.css"&gt;
+&lt;script type="module" src="path/to/chat-widget.js"&gt;&lt;/script&gt;</code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Chat Widget Configuration -->
+    <script>
+      window.chatWidgetConfig = {
+        title: "Customer Support",
+        color: "#007bff",
+        messagesEndpoint: "/api/messages",
+        startingMessage:
+          "Hello! How can I help you today? Click here to start chatting with our support team.",
+        botId: "106c3cac-0e27-4cc4-851c-921be1b7eeb9"
+      };
+    </script>
+
+    <!-- Load the Chat Widget -->
+    <link rel="stylesheet" href="./dist/assets/widget-Clk8ccPa.css" />
+    <script type="module" src="./dist/chat-widget.js"></script>
+  </body>
+</html>

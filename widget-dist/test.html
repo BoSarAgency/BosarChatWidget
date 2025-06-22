@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Widget Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .config-example {
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 4px;
+        border-left: 4px solid #007bff;
+        margin: 20px 0;
+      }
+      code {
+        background: #e9ecef;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: "Courier New", monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chat Widget Test Page</h1>
+      <p>
+        This is a test page to demonstrate the chat widget functionality. The
+        widget should appear as a blue circle button in the bottom right corner
+        of the screen.
+      </p>
+
+      <h2>Features:</h2>
+      <ul>
+        <li>Click the bot icon to open the chat window</li>
+        <li>
+          Send messages by typing and pressing Enter or clicking the send button
+        </li>
+        <li>User messages appear on the right (blue)</li>
+        <li>Bot messages appear on the left (gray)</li>
+        <li>Close the chat by clicking the X button in the header</li>
+      </ul>
+
+      <h2>Configuration:</h2>
+      <p>
+        The widget can be configured by setting
+        <code>window.chatWidgetConfig</code> before loading the script:
+      </p>
+
+      <div class="config-example">
+        <strong>Current Configuration:</strong><br />
+        • Title: "Custom Support Chat"<br />
+        • Color: #28a745 (green)<br />
+        • Starting Message: "Hi there! Welcome to our support chat. How can we
+        assist you today?"
+      </div>
+
+      <p>Try interacting with the chat widget in the bottom right corner!</p>
+    </div>
+
+    <!-- Chat Widget Configuration -->
+    <script>
+      window.chatWidgetConfig = {
+        title: "Custom Support Chat",
+        color: "#28a745",
+        messagesEndpoint: "/api/chat",
+        startingMessage:
+          "Hi there! Welcome to our support chat. How can we assist you today?",
+        botId: "106c3cac-0e27-4cc4-851c-921be1b7eeb9"
+      };
+    </script>
+
+    <!-- Load the Chat Widget -->
+    <link rel="stylesheet" href="./dist/assets/widget-Clk8ccPa.css" />
+    <script type="module" src="./dist/chat-widget.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+# Redirect all routes to index.html for SPA routing
+/*    /index.html   200
+
+# Serve static files directly
+/chat-widget.js    /chat-widget.js    200
+/assets/*    /assets/:splat    200
+/vite.svg    /vite.svg    200
+
+# Handle API routes (if needed for future backend integration)
+/api/*    https://your-api-domain.com/api/:splat    200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:; img-src 'self' data:;

@@ -1,0 +1,38 @@
+{
+    "name": "bosarchatwidget",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "build:production": "vite build --mode production",
+        "build:staging": "vite build --mode staging",
+        "lint": "eslint .",
+        "preview": "vite preview",
+        "preview:production": "vite preview --mode production",
+        "deploy:amplify": "npm run build:production && echo 'Build complete. Deploy to AWS Amplify via Git push.'",
+        "deploy:s3": "node deploy-s3.js",
+        "deploy:s3:staging": "AWS_PROFILE=staging node deploy-s3.js",
+        "deploy:s3:production": "AWS_PROFILE=production node deploy-s3.js",
+        "verify:s3": "node verify-deployment.js",
+        "test:build": "npm run build && npm run preview"
+    },
+    "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-markdown": "^10.1.0",
+        "socket.io-client": "^4.8.1"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.25.0",
+        "@types/react": "^19.1.2",
+        "@types/react-dom": "^19.1.2",
+        "@vitejs/plugin-react": "^4.4.1",
+        "eslint": "^9.25.0",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-react-refresh": "^0.4.19",
+        "globals": "^16.0.0",
+        "vite": "^6.3.5"
+    }
+}
