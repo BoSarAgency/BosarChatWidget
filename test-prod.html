@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Chat Widget Test</title>
+  <!-- CSS is now bundled in the JS file -->
+</head>
+<body>
+  <h1>Chat Widget Test</h1>
+  <p>The chat widget should appear in the bottom right corner.</p>
+
+  <script>
+  window.chatWidgetConfig = {
+    title: "Test",
+    color: "#750833",
+    startingMessage: "Hello! How can I help you today?",
+    socketUrl: "wss://api.bosar.click/chat",
+    // socketUrl: "ws://localhost:3001/chat",
+    botId: "55399af4-a571-4eb3-af02-3c0201876478"
+  };
+  </script>
+  <script>
+    window.addEventListener('error', (e) => {
+      console.error('Global error before widget load:', e.error, e.message, e.filename, e.lineno, e.colno);
+    });
+  </script>
+  <script src="https://bosar-widget.s3.us-west-1.amazonaws.com/chat-widget.js"></script>
+  
+</body>
+</html>

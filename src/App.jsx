@@ -4,13 +4,13 @@ import "./App.css";
 function App() {
   // Default configuration for the chat widget
   const defaultConfig = {
-    title: "ACQG Enterprises Inc.",
+    title: "Bosar Agency",
     color: "#75080D",
     messagesEndpoint: "/api/messages",
     startingMessage: "Hello! How can I help you today?",
-    // socketUrl: "wss://api.bosar.click/chat",
-    socketUrl: "ws://localhost:3001/chat",
-    botId: "106c3cac-0e27-4cc4-851c-921be1b7eeb9"
+    socketUrl: "wss://api.bosar.click/chat",
+    // socketUrl: "ws://localhost:3001/chat",
+    botId: "55399af4-a571-4eb3-af02-3c0201876478"
   };
 
   return (

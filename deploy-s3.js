@@ -311,8 +311,9 @@ function showDeploymentInfo() {
     console.log("<script>");
     console.log("  window.chatWidgetConfig = {");
     console.log("    title: 'Customer Support',");
-    console.log("    color: '#007bff',");
-    console.log("    socketUrl: 'wss://your-api-domain.com',");
+    console.log("    color: '#75080D',");
+    console.log("    socketUrl: 'wss://api.bosar.click/chat',");
+    console.log("    botId: '55399af4-a571-4eb3-af02-3c0201876478',");
     console.log("    startingMessage: 'Hello! How can I help you today?'");
     console.log("  };");
     console.log("</script>");

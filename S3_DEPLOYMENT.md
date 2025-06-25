@@ -143,10 +143,11 @@ After deployment, integrate the widget into any website:
 <!-- Configure the widget -->
 <script>
   window.chatWidgetConfig = {
-    title: 'Customer Support',
-    color: '#007bff',
-    socketUrl: 'wss://your-api-domain.com',
-    startingMessage: 'Hello! How can I help you today?'
+    title: "Bosar Agency",
+    color: "#75080D",
+    startingMessage: "Hello! How can I help you today?",
+    socketUrl: "wss://api.bosar.click/chat",
+    botId: "55399af4-a571-4eb3-af02-3c0201876478"
   };
 </script>
 
